@@ -1,4 +1,4 @@
-# Grand DE01 SAHP Bußgeldrechner
+# Grand DE01 LSPD Bußgeldrechner
 
 Grundidee von Joshi Enrage. Von Steven Brock überarbeitet.
 
