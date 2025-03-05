@@ -1,0 +1,26 @@
+/* Stil für die Benachrichtigung */
+#notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f44336; /* Standard: Rot für Fehler */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none; /* Standardmäßig unsichtbar */
+    z-index: 9999; /* Über allen Elementen */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Erfolgsmeldung (grün) */
+#notification.success {
+    background-color: #4CAF50;
+}
+
+/* Warnung (gelb) */
+#notification.warning {
+    background-color: #ff9800;
+}
