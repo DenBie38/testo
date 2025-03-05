@@ -1,0 +1,140 @@
+/* Optimierte und überarbeitete style.css */
+
+:root {
+    --textprim: #bababa;
+    --textsecond: #ffffff;
+    --button: #2b2b2b;
+    --accent: #6565ff;
+    --background: #1d1d1d;
+    --inputs: #121212;
+    --buttonhover: #4a4aff;
+}
+
+* {
+    font-family: 'ProximaNova', sans-serif;
+    color: var(--textprim);
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+#header {
+    width: 100%;
+    height: 60px;
+    background-color: var(--inputs);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 3px solid var(--buttonhover);
+}
+
+#title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--textsecond);
+}
+
+#searchbar input {
+    width: 300px;
+    height: 30px;
+    background-color: var(--background);
+    border: 1px solid var(--buttonhover);
+    border-radius: 5px;
+    padding-left: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Content Styling */
+#contentbox {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#fineslist, #results {
+    background-color: var(--inputs);
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#fineslist {
+    flex: 3;
+    max-height: 500px;
+}
+
+#results {
+    flex: 1;
+    max-height: 500px;
+}
+
+/* Tabellen Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--button);
+    color: var(--textsecond);
+}
+
+.fine {
+    background: var(--inputs);
+    transition: background 0.3s;
+}
+
+.fine:hover {
+    background: var(--accent);
+    cursor: pointer;
+}
+
+.selected {
+    background-color: var(--accent);
+}
+
+/* Disclaimer Styling */
+#disclaimer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--textsecond);
+    text-align: center;
+}
+
+#disclaimer button {
+    padding: 10px;
+    margin-top: 10px;
+    background: var(--buttonhover);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#disclaimer button:hover {
+    background: var(--accent);
+}
